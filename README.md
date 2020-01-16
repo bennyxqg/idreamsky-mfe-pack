@@ -1,21 +1,19 @@
-# iView-project
+# vue-single-spa-module
 
-This project is build for Vue.js 2 + vue-router + webpack2 + iView 3, just install and run.
-
-## Install
-```bush
-// install dependencies
-npm install
+## Project setup
 ```
-## Run
-### Development
-```bush
-// For the first time, run init to create index.html
-npm run init
-npm run dev
-```
-### Production(Build)
-```bush
-npm run build
+yarn install
 ```
 
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,23 +1,20 @@
-import Vue from 'vue';
-import iView from 'iview';
+import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 import singleSpaVue from "single-spa-vue";
-import 'iview/dist/styles/iview.css'
 
-Vue.use(iView);
 Vue.config.productionTip = false
 
 const vueOptions = {
-    el: "#mfe",
+    el: "#vue",
     router,
     store,
     render: h => h(App)
 };
 
 // 判断当前页面使用singleSpa应用,不是就渲染
-if (!window['mfe-pack']) {
+if (!window.singleSpaNavigate) {
     delete vueOptions.el;
     new Vue(vueOptions).$mount('#app');
 }
